@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap');
+
+:root {
+    /* List of colors */
+    --purple: #574AE8;
+    --gradient-default: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+    --white: #ffffff;
+    --white-200: #f9f9f9;
+    --gray: #717171;
+    --gray-dark: #1A202C;
+
+    /* Typography */
+    --lexend-deca: "Lexend Deca";
+    --inter: "Inter";
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+main {
+    background: var(--white);
+    width: 100vh;
+}
+
+header {
+    background: var(--gradient-default);
+    height: 250px;
+}
+
+.c-menu__container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+@media (max-width: 414px) {
+    header {
+        width: 100%;
+        background: var(--gradient-default);
+    }
+
+    section {
+        width: 300px;
+        margin: 0 auto;
+        
+    }
+
+    article {
+        width: 378px;
+    }
+
+    .c-container {
+        padding: 6px 5px;
+    }
+
+    .c-menu__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 48px;
+    }
+
+    .c-menu__texts {
+        font-family: var(--lexend-deca);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        color: var(--white);
+    }
+
+
+    .c-search {
+        width: 378px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 41px;
+    }
+
+    .c-search__input {
+        border-radius: 5px;
+        border: none;
+        padding: 12px 0 12px 38px;
+        max-width: 374px;
+        display: block;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .c-search__input::placeholder {
+        color: var(--white);
+        opacity:  0.5;
+    }
+
+    .c-search__button {
+        position: relative;
+        bottom: 30px;
+        left: 30px;
+        border: none;
+        background: none;
+    }
+    
+    .c-search__img {
+        width: 15.68px;
+    }
+}

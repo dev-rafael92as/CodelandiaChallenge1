@@ -8,20 +8,24 @@
     <title>Desafio Codelândia 01</title>
 </head>
 <body>
-    <header>
-        <div>
-            <a href="/">
-                <h1>Codelândia</h1>
-            </a>
-        </div>
-        <nav>
-            <a href="#">
-                <p>blog</p>
-            </a>
-        </nav>
-        <div>
-            <input type="text" name="Campo de Busca" id="" placeholder="Pesquisar no blog">
-            <button type="button"><img src="./assets/img/imgMagnifyingGlass.png"></button>
+    <header> 
+        <div class="c-container">
+            <div class="c-menu__container">
+                <div>
+                    <a href="/">
+                        <h1 class="c-menu__logo c-menu__texts">Codelândia</h1>
+                    </a>
+                </div>
+                <nav>
+                    <a href="#">
+                        <p class="c-menu__nav c-menu__texts">blog</p>
+                    </a>
+                </nav>
+            </div>
+            <div class="c-search">
+                <input class="c-search__input" type="text" name="Campo de Busca" id="" placeholder="Pesquisar no blog">
+            </div>
+            <button class="c-search__button" type="button"><img class="c-search__img" src="./assets/img/imgMagnifyingGlass.png"></button>
         </div>
     </header>
     <main>
@@ -84,6 +88,5 @@
             </article>
         </section>
     </main>
-
 </body>
 </html>
